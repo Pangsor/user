@@ -8,5 +8,5 @@ public interface UserService {
 
     UserDto setDataUser(UserDto userDto);
     UserDto getDataUser(Long contactId);
-    void delDataUser(Long contactId);
+    void delDataUser(int userId);
 }
