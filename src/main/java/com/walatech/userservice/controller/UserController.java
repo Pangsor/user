@@ -23,20 +23,11 @@ public class UserController {
         return new ResponseEntity<>(savedMovie, HttpStatus.CREATED);
     }
 
-    /*
     @GetMapping("{id}")
-    public ResponseEntity<ContactDto> getContactById(@PathVariable("id") Long contactId){
-        ContactDto movie = contactService.getContactById(contactId);
-        return new ResponseEntity<>(movie, HttpStatus.OK);
+    public ResponseEntity<List<UserDto>> getDataUser(@PathVariable("id") String userid){
+        List<UserDto> userDtoList = userService.getDataUser(userid);
+        return new ResponseEntity<>(userDtoList, HttpStatus.OK);
     }
-
-    @GetMapping()
-    public ResponseEntity<List<ContactDto>> getAllContacts(){
-        List<ContactDto> movieList = contactService.getAllContacts();
-        return new ResponseEntity<>(movieList, HttpStatus.OK);
-    }
-    */
-
 
     @DeleteMapping("{id}")
     public ResponseEntity<String> delDataUser(@PathVariable("id") int userid){

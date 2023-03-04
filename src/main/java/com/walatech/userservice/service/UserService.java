@@ -7,6 +7,6 @@ import java.util.List;
 public interface UserService {
 
     UserDto setDataUser(UserDto userDto);
-    UserDto getDataUser(Long contactId);
+    List<UserDto> getDataUser(String userId);
     void delDataUser(int userId);
 }

@@ -19,15 +19,15 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int userid;
 
-    @Column(name = "namalengkap", nullable = false)
+    @Column(name = "namalengkap", nullable = false,length = 100)
     private String namalengkap;
 
-    @Column(name = "username", nullable = false)
+    @Column(name = "username", nullable = false,length = 100)
     private String username;
 
-    @Column(name = "password", nullable = false)
+    @Column(name = "password", nullable = false,length = 100)
     private String password;
 
-    @Column(name = "status", nullable = false)
-    private char status;
+    @Column(name = "status", nullable = false,length = 1)
+    private String status;
 }
